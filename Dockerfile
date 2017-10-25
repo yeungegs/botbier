@@ -14,8 +14,8 @@ RUN set -ex; \
 	apt-get build-dep --assume-yes --no-install-recommends --no-show-upgraded --quiet=2 python-pygame; \
 	apt-get install --assume-yes --no-install-recommends --no-show-upgraded --quiet=2 \
 		wget \
-	    	unzip \
-	    	python-pip \
+		unzip \
+		python-pip \
 		python-pygame; \
 	# Set working directory to root
 	cd /root/; \
