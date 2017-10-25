@@ -11,7 +11,7 @@ Botbier aims to minimize frustrations with setting up the StarCraft II Learning 
 
 ### Requirements
 - Docker for Mac (not yet tested on Docker for Windows)
-- at least 4GB free
+- at least 5.5GB free
 
 ### Installation
 
