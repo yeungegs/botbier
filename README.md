@@ -36,7 +36,8 @@ _At any point, to return to your local machine, type `exit`. See troubleshooting
 ### Resources
 
 ### Credits
-Mario Izquierdo, Mentor
-Victor Mendiluce, Consulting Mentor
-Anne Cognet, Consulting Mentor
-Mason Fish, Consulting Mentor
+
+- Mario Izquierdo, Mentor
+- Victor Mendiluce, Consulting Mentor
+- Anne Cognet, Consulting Mentor
+- Mason Fish, Consulting Mentor
