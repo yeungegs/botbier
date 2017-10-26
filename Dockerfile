@@ -12,7 +12,7 @@ SHELL ["/bin/bash", "-c"]
 # Update and install packages for SC2 development environment
 RUN apt-get update --assume-yes --quiet=2 \
  && apt-get build-dep --assume-yes --no-install-recommends --no-show-upgraded --quiet=2 python-pygame \
-    apt-get install --assume-yes --no-install-recommends --no-show-upgraded --quiet=2 \
+ && apt-get install --assume-yes --no-install-recommends --no-show-upgraded --quiet=2 \
     build-essential gcc \
     emacs \
     git \
