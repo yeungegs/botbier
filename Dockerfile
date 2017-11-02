@@ -41,7 +41,7 @@ WORKDIR /root/
 RUN pip install pysc2 \
  && export SC2PATH=~/StarCraftII/
 
-# Install s2client API
+# Install Blizzard S2Client API
 RUN git clone --recursive https://github.com/Blizzard/s2client-api
 WORKDIR s2client-api
 RUN mkdir build
