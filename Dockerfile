@@ -22,24 +22,19 @@ RUN apt-get update --assume-yes --quiet=2 \
     vim \
     wget \
     build-essential \
+    cmake3
+
 # Set working directory to root
- && cd /root/ \
+WORKDIR /root/
+
 # Install pysc2
- && pip install pysc2 \
+RUN pip install pysc2 \
  && export SC2PATH=~/StarCraftII/
 
-# Install CMake
-RUN wget https://cmake.org/files/v3.10/cmake-3.10.0-rc3.tar.gz
-RUN tar xf cmake-3.10.0-rc3.tar.gz
-RUN cd cmake-3.10.0-rc3
-RUN ./configure
-RUN make install
-RUN cd ~/
-
-# Install Blizzard S2Client API
+# Install s2client API
 RUN git clone --recursive https://github.com/Blizzard/s2client-api
-RUN cd s2client-api/
-RUN mkdir build
-RUN cd build/
-RUN cmake ../
-RUN make
+WORKDIR s2client-api
+RUN mkdir build \
+ && cd build \
+ && cmake ../ \
+ && make
