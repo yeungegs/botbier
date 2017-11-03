@@ -35,7 +35,7 @@ RUN apt-get install --assume-yes --no-install-recommends --no-show-upgraded --qu
 RUN ln -f -s /usr/bin/g++-4.9 /usr/bin/g++
 
 # Set working directory to root
-RUN cd /root/
+WORKDIR /root/
 
 # Install pysc2
 RUN pip install pysc2 \
@@ -43,8 +43,7 @@ RUN pip install pysc2 \
 
 # Install Blizzard S2Client API
 RUN git clone --recursive https://github.com/Blizzard/s2client-api
-RUN cd s2client-api
-RUN mkdir build
-RUN cd build
+WORKDIR s2client-api/
+WORKDIR build/
 RUN cmake ../
 RUN make
