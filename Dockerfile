@@ -1,3 +1,8 @@
+# Set up StarCraft II Learning Environment
+# docker run -it \
+#        -e /bin/bash \
+#        --name sc2ai
+#         egsy/sc2ai
 # Use an official Ubuntu release as a base image
 FROM ubuntu:trusty
 LABEL maintainer="Elaine Yeung <yeung.egs@gmail.com>"
