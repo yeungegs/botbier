@@ -43,11 +43,11 @@ _At any point, to return to your local machine, type `exit`. See troubleshooting
 ### Resources
 
 ### Roadmap
-[] insert link to list of resources on medium
-[] mount volume to persist data between containers
-[] COPY or ADD starcraft into mounted volume...?
-[] complete usage, troubleshooting, resources sections in readme
-[] add contribution guidelines to readme
+- [] insert link to list of resources on medium
+- [] mount volume to persist data between containers
+- [] COPY or ADD starcraft into mounted volume...?
+- [] complete usage, troubleshooting, resources sections in readme
+- [] add contribution guidelines to readme
 
 ### Credits
 
