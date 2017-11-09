@@ -52,3 +52,6 @@ WORKDIR s2client-api/
 WORKDIR build/
 RUN cmake ../
 RUN make
+
+# Set working directory to root
+WORKDIR /root/
