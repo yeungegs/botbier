@@ -17,10 +17,17 @@ Botbier aims to minimize frustrations with setting up the StarCraft II Learning 
 
 ```sh
 # pull latest image from Docker cloud
-docker pull egsy/sc2ai
+docker run -it \
+       -e /bin/bash \
+       --name sc2ai
+        egsy/sc2ai
+```
 
+```
 # wait for Docker image to be pulled. 
+```
 
+```
 # Once pulled, you will be inside container - now run install script to install Linux version of StarCraft 2 and maps.
 ./root/installblz.sh
 ```
@@ -34,6 +41,12 @@ _At any point, to return to your local machine, type `exit`. See troubleshooting
 ### Contributing
 
 ### Resources
+
+### Roadmap
+[] insert link to list of resources on medium
+[] mount volume to persist data between containers
+[] COPY or ADD starcraft into mounted volume...?
+[] 
 
 ### Credits
 
